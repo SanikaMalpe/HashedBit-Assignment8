@@ -1,0 +1,133 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #cdcaca, #777676);
+}
+
+.page {
+  padding: 35px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/*PAGE 1 - MOVIE GRID*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 330px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.card p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+
+
+.center-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-card {
+  background: white;
+  padding: 30px 35px;
+  border-radius: 16px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+/* PAGE 2 - MOVIE DETAILS */
+
+.center-card img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.center-card h2 {
+  font-size: 26px;
+  margin: 15px 0;
+}
+
+.center-card p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* PAGE 3 - BOOKING FORM */
+
+.form {
+  margin-top: 20px;
+}
+
+.form input {
+  width: 90%;
+  padding: 12px;
+  margin: 12px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* PAGE 4 - BOOKING SUCCESS */
+
+.success-text {
+  font-size: 25px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.booking-id {
+  font-size: 22px;
+  font-weight: bold;
+  color: #189d03;
+  margin: 15px 0;
+}
+
+/* BUTTON */
+
+button {
+  padding: 12px 25px;
+  background: #189d03;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: #137802;
+}
